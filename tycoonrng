@@ -1,7 +1,13 @@
 local cubeNames = {
+    "Luck Cube",
+    "Speed Cube",
     "Inferno Cube",
+    "Glitch Cube",
+    "Haste Cube",
     "Fortune Cube",
     "Pastel Cube",
+    "Golden Cube",
+    "Wealth Cube",
     "Spore Blossom",
     "Technosphere",
     "Event Horizon",
@@ -9,10 +15,15 @@ local cubeNames = {
 }
 
 local cubeColors = {
+    ["Luck Cube"] = "#05ff3b",
+    ["Speed Cube"] = "#6397ff",
     ["Inferno Cube"] = "#fc6330",
+    ["Glitch Cube"] = "#440345",
     ["Haste Cube"] = "#0558ff",
     ["Fortune Cube"] = "#288000",
     ["Pastel Cube"] = "#cc96ff",
+    ["Golden Cube"] = "#fab546",
+    ["Wealth Cube"] = "#ffec59",
     ["Spore Blossom"] = "#ed4aff",
     ["Technosphere"] = "#5c4aff",
     ["Event Horizon"] = "#6854ff",
@@ -20,8 +31,8 @@ local cubeColors = {
 }
 
 local notifiedCubes = {}
-local webhookUrl = ''
-local userId = ''
+local webhookUrl = 'https://discord.com/api/webhooks/1217155440404725862/IWVc19aKGSPzu4ieETHoL-jAi8KzaNve1QVMUe9xA2cb7mUGxSASGjWhIKnRT6yVmQNb'
+local userId = '320895102694195211'
 local notificationCooldown = 0.86 -- seconds
 
 local function hexToRGB(hex)
